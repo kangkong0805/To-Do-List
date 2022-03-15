@@ -1,15 +1,13 @@
 import React from 'react';
+import Background from './Components/Background/Background';
 // import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Header/>}/>
-      </Routes>
-    </BrowserRouter>
+    <Background>
+      <Header/>
+    </Background>
   );
 }
 
