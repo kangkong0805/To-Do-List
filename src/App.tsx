@@ -1,14 +1,7 @@
-import React from 'react';
-import Background from './Components/Background/Background';
-// import './App.css';
-import Header from './Components/Header/Header';
+import HomePage from "./Pages/HomePage/HomePage";
 
-function App() {
-  return (
-    <Background>
-      <Header/>
-    </Background>
+export default function App() {
+  return(
+    <HomePage/>
   );
 }
-
-export default App;

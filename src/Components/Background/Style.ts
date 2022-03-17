@@ -22,4 +22,5 @@ export const InsideWrapper = styled.div`
     top: 0;
     bottom: 0;
     margin: auto;
+    text-align: center;
 `
