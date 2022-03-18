@@ -2,14 +2,14 @@ import { FC } from "react";
 import Header from "../Header/Header";
 import * as S from "./Style";
 
-const Background:FC = () => {
+type Props = React.PropsWithChildren<{}>;
+
+export default function Background({children}: Props) {
     return(
         <S.OutsideWrapper>
             <S.InsideWrapper>
-                <Header/>
+                {children}
             </S.InsideWrapper>
         </S.OutsideWrapper>
     );
 }
-
-export default Background;

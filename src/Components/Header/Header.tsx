@@ -1,7 +1,8 @@
 import { useEffect } from "react";
+import { ButtonWrapper } from "../WriteButton/Style";
 import { HeaderWrapper } from "./Style"
 
-export default function Header() {
+const Header:React.FC = () => {
 
     let now = new Date();
     let year = now.getFullYear();
@@ -18,3 +19,5 @@ export default function Header() {
         </HeaderWrapper>
     );
 }
+
+export default Header;

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
+
 export const OutsideWrapper = styled.div`
     width: 100vw;
     height: 100vh;
-    top: 0;
-    left: 0;
     background-color: #E9ECEF;
     display: flex;
-    position: relative;
+    position: absolute;
+    z-index: -1;
 `
 
 export const InsideWrapper = styled.div`
@@ -23,4 +23,5 @@ export const InsideWrapper = styled.div`
     bottom: 0;
     margin: auto;
     text-align: center;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
 `
