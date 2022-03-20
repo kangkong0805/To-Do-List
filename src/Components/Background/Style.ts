@@ -11,8 +11,7 @@ export const OutsideWrapper = styled.div`
 `
 
 export const InsideWrapper = styled.div`
-    width: 35vw;
-    min-width: 600px;
+    width: 600px;
     height: 80vh;
     background-color: white;
     border-radius: 50px;
@@ -22,6 +21,5 @@ export const InsideWrapper = styled.div`
     top: 0;
     bottom: 0;
     margin: auto;
-    text-align: center;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
 `

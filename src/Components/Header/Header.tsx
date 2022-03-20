@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ButtonWrapper } from "../WriteButton/Style";
+import { ButtonWrapper } from "../InputLayer/Style";
 import { HeaderWrapper } from "./Style"
 
 const Header:React.FC = () => {
