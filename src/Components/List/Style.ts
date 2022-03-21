@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MdDelete, MdDone } from "react-icons/md";
 
 export const ListWrapper = styled.div`
     width: 100%;
@@ -23,4 +24,21 @@ export const ListText = styled.div`
     position: relative;
     left: 50px;
     display:inline-block;
+`
+
+export const Done = styled(MdDone)`
+    width: 30px; 
+    height: 30px; 
+    margin: 5px;
+`
+
+export const Delete = styled(MdDelete)`
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+
+    &:hover{
+        color: red;
+    }
 `

@@ -1,5 +1,3 @@
-import { FC } from "react";
-import Header from "../Header/Header";
 import * as S from "./Style";
 
 type Props = React.PropsWithChildren<{}>;

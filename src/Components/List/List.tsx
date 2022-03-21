@@ -1,7 +1,5 @@
-import { CheckWrapper, ListText, ListWrapper } from "./Style";
-import { MdDone, MdDelete } from 'react-icons/md';
-import { useEffect, useState } from "react";
-import styled from "styled-components";
+import * as S from "./Style";
+import { useEffect} from "react";
 
 export default function List(props:any) {
 
@@ -23,14 +21,15 @@ export default function List(props:any) {
 
         lists.map((list:any, key: any) => (
             
-            <ListWrapper key={key}>
-                <CheckWrapper onClick={() => {onCheck(list.key)}}>
-                    {list.check && <MdDone style={{ width: "24px", height: "24px", margin: "7px" }} />}
-                </CheckWrapper>
+            <S.ListWrapper key={key}>
+                <S.CheckWrapper onClick={() => {onCheck(list.key)}}>
+                    {list.check && <S.Done />}
+                </S.CheckWrapper>
 
-                <ListText>{list.text}</ListText>
-                <MdDelete onClick={() => {onDelete(list.key)}} style={{ position: "absolute", right: "20px" }}/>
-            </ListWrapper>
+                <S.ListText>{list.text}</S.ListText>
+
+                <S.Delete onClick={() => {onDelete(list.key)}}/>
+            </S.ListWrapper>
         ))
 
 

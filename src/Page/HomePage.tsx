@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import Background from '../Components/Background/Background';
 import Header from '../Components/Header/Header';
 import InputLayer from '../Components/InputLayer/InputLayer';
